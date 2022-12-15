@@ -300,7 +300,7 @@ doc["aitetris"].bind("click", aitetris.do)
 <h2>W8~9</h2>
 <p>期中考周</p>
 <h2>W10</h2>
-<p>因電腦的ipv6有問題 而導致隨堂考試沒辦法準時登入</p>
+<p>因電腦的ipv6連線設定有問題 而導致隨堂考試沒辦法準時登入</p>
 <p>分小組 6個人一組</p>
 <h2>W11</h2>
 <p>因運動會 所以不上課</p>
@@ -309,18 +309,9 @@ doc["aitetris"].bind("click", aitetris.do)
 <p>因為準備比賽所以缺考考試</p>
 <p></p>
 <h1>HW</h1>
-<h2>w10 HW1</h2>
-<p>心得:</p>
-<p></p>
-<p>///////////// 老師上課內容 //////////////</p>
+<h2>w10</h2>
 <div>
-<div>利用 Python 或 Brython 讀取 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/JSON" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://developer.mozilla.org/zh-tw/docs/web/javascript/reference/global_objects/json">JSON</a> 檔案:</div>
-<div><a href="https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/a6825f13b1bb0b61e09e74dd117729eefe1d947f/20221110_cp1b_w10_quiz.json" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/a6825f13b1bb0b61e09e74dd117729eefe1d947f/20221110_cp1b_w10_quiz.json">1b w10 小考結果</a>為 <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/JSON" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://developer.mozilla.org/zh-tw/docs/web/javascript/reference/global_objects/json">JSON</a> 檔案格式, 請各小組編寫程式處理這個檔案資料, 並回答下列問題:</div>
-<div>1) 請問是否能夠以此<a href="https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/a6825f13b1bb0b61e09e74dd117729eefe1d947f/20221110_cp1b_w10_quiz.json" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/a6825f13b1bb0b61e09e74dd117729eefe1d947f/20221110_cp1b_w10_quiz.json">小考結果檔案</a>作為輸入, 直接列出該班缺考人員學號?</div>
-<div>2) 承上, 若將缺考者得分視為 0 分, 是否可以列出以該班選課人員學號作為第一欄資料, 而第二欄位則為本次考試的成績?</div>
-<div></div>
 <div>
-<h2>w10 HW2</h2>
 <p>心得:我有自己試寫了程式便去試試看怎樣才能使結果變成可以直接<span>輸出 1, 3, 5, 7, 9</span><span>不會跳行,但還沒找出為甚麼跳行的原因,以下有實際操作的截圖</span></p>
 <p><span></span></p>
 <p>(自己修改的程式以及解釋)</p>
@@ -360,6 +351,7 @@ print(type(user_input_temp))</pre>
 <p>//// 在自己的倉儲中新增w12_hw1.py的New Gist /////</p>
 <p><img alt="" height="179" src="/images/1671119400391.jpg" width="712"/></p>
 <h3>hw1-1</h3>
+<p><span>將超連結加入,使其需按下下方按鈕才能輸入值</span></p>
 <!-- 
 在動態網站頁面中啟用 Brython 執行環境的用法, 請注意動態網站執行所在路徑
 -->
@@ -378,6 +370,7 @@ brython({debug:1, pythonpath:['/static/','/downloads/py/']});
 <!-- 利用 html 建立一個 id="btn1" 的按鈕 -->
 <p><button id="btn1">取使用者輸入</button></p>
 <div id="brython_div"></div>
+<div></div>
 <p>
 <script type="text/python">
 from browser import html, document
@@ -400,7 +393,8 @@ def get_input(env):
 # 讓使用者 click 後會經由瀏覽器中的 event 通知執行 get_input 函式
 document["btn1"].bind('click', get_input)
 </script>
-</p><h3>hw2</h3>
+</p>
+<h3>hw2</h3>
 <p><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/853d16b9c7b450ff0fde9c6439700e8a/raw/c44c5fa0632a51eab1246d394b1d78aae28177f4/w12_hw2.py">hw2</a> <span>(有做出來的連結)</span></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
 user_input_temp = input("請輸入攝氏溫度值:")
@@ -416,6 +410,7 @@ print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit)
 <p><span>//// 在自己的倉儲中新增w12_hw2.py的New Gist /////</span></p>
 <p><img alt="" height="291" src="/images/1671120039411.jpg" width="541"/></p>
 <h3>hw2-1</h3>
+<p><span>將超連結加入,使其需按下下方按鈕才能輸入值</span></p>
 <p><!-- 
 在動態網站頁面中啟用 Brython 執行環境的用法, 請注意動態網站執行所在路徑
 -->
