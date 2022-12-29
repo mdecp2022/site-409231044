@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Brython.html'>Brython</a><li class='has-children'><a href='CP2022.html'>CP2022</a><ul class='dropdown'><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W8~9.html'>W8~9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a></li></ul><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='w5.html'>w5</a><li><a href='w6.html'>w6</a><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='hw10-1.html'>hw10-1</a><li><a href='hw10-2.html'>hw10-2</a></li></ul><li><a href='w11.html'>w11</a><li class='has-children'><a href='w12.html'>w12</a><ul class='dropdown'><li><a href='hw12-1.html'>hw12-1</a><li><a href='hw1-1.html'>hw1-1</a><li><a href='hw12-2.html'>hw12-2</a><li><a href='hw2-1.html'>hw2-1</a></li></ul><li class='has-children'><a href='w13.html'>w13</a><ul class='dropdown'><li><a href='hw13-1.html'>hw13-1</a><li><a href='hw13-2.html'>hw13-2</a></li></ul><li><a href='w15.html'>w15</a></li>
+                     <li><a href='About.html'>About</a><li><a href='Brython.html'>Brython</a><li class='has-children'><a href='CP2022.html'>CP2022</a><ul class='dropdown'><li><a href='W4.html'>W4</a><li><a href='W5.html'>W5</a><li><a href='W8~9.html'>W8~9</a><li><a href='W10.html'>W10</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a></li></ul><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='w5.html'>w5</a><li><a href='w6.html'>w6</a><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='hw10-1.html'>hw10-1</a><li><a href='hw10-2.html'>hw10-2</a></li></ul><li><a href='w11.html'>w11</a><li class='has-children'><a href='w12.html'>w12</a><ul class='dropdown'><li><a href='hw12-1.html'>hw12-1</a><li><a href='hw1-1.html'>hw1-1</a><li><a href='hw12-2.html'>hw12-2</a><li><a href='hw2-1.html'>hw2-1</a></li></ul><li class='has-children'><a href='w13.html'>w13</a><ul class='dropdown'><li><a href='hw13-1.html'>hw13-1</a><li><a href='hw13-2.html'>hw13-2</a></li></ul><li><a href='w14.html'>w14</a><li><a href='w15.html'>w15</a><li><a href='w16.html'>w16</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,7 +141,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">hw13-2 << <a href='hw13-2.html'>Previous</a> <br /><h1>w15</h1>
+    <div id="tipue_search_content">w14 << <a href='w14.html'>Previous</a> <a href='w16.html'>Next</a> >> w16<br /><h1>w15</h1>
 <p>回答以下問題:</p>
 <div>
 <p>Q1:為何學習計算機程式需要建立個人倉儲?</p>
@@ -164,48 +164,7 @@ img.add_border {
 <p><span></span></p>
 <p><span>Q7:</span>變數, 字串, 整數, 浮點數, 數列, Tuple, Dictionary, 函式, 重複迴圈, class, 物件導向, 資料庫, 這些名詞對您而言代表甚麼?</p>
 </div>
-<div></div>
-<div></div>
-<div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/b1c67aab648d225e8f5881f754bcfd78/raw/38aa0887036c4c01e0da643e297325012a2cf4ab/w15">綠色方塊行走模擬</a></div>
-<div></div>
-<div></div>
-<div>(快要成功)</div>
-<div>還沒成功,有不斷去試,但因為美改一個地方讓程式去執行的時候,就會發現後面一直顯示錯誤,還需再認真研究看看試哪裡有問題</div>
-<div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/b1c67aab648d225e8f5881f754bcfd78/raw/abaa2f7bc1696579955feaf458cfe4923ae13709/w15_3">綠色方塊行走加開始按鈕</a></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<p>
-<script type="text/python">
-from browser import html, document
-# Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
-#user_input_temp = input("請輸入攝氏溫度值:")
-# 接著列出 user_input_temp 變數的資料型別
-# 但是在頁面中 Brython 的 print() 將會顯示在 log 而非頁面
-#print(type(user_input_temp))
-# 這裡定義一個 brython_div 變數, 透過 document[] 與頁面中 id="brython_div" 的位置對應
-brython_div = document["brython_div"]
-# 看能不能直接將變數值字串列在標註 id 為 "brython_div" 的頁面位置
-#brython_div <= user_input_temp
-# 之後若要列出 html, 則需要透過 Brython 的 html 模組
-# 接下來要設法按下按鈕之後才執行取使用者 input 的流程
-# 首先 comment 掉前面的 input() 與 print(), 同時蓋掉輸出, 並利用事件導向設計一個函式
-def get_input(env):
-    user_input_temp = input("請輸入攝氏溫度值:")
-    brython_div <= user_input_temp
-# 透過 Brython browser 模組中的 document 物件將 id="btn1" 的物件中的 bind() 方法
-# 讓使用者 click 後會經由瀏覽器中的 event 通知執行 get_input 函式
-document["btn1"].bind('click', get_input)
-</script>
-</p><br />hw13-2 << <a href='hw13-2.html'>Previous</a> </div>
+<br />w14 << <a href='w14.html'>Previous</a> <a href='w16.html'>Next</a> >> w16</div>
         
     <!-- footer -->
       <div class="container">
