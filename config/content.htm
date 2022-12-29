@@ -501,7 +501,46 @@ brython({debug:1, pythonpath:['/static/','/downloads/py/']});
 <p><!-- 利用 html 建立一個 id="btn1" 的按鈕 --></p>
 <p><button id="btn1">取使用者輸入</button></p>
 <div id="brython_div"></div>
+<h2>w13</h2>
+<h3>hw13-1</h3>
+<div>在這邊我們寫了一個程式,點開下方的連結後會發現跳出一個輸入溫度值的框框,接著輸入值後即可在下方看到輸入的值</div>
 <div></div>
+<div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/575bc410a1e21ecbdcac6137d51a5e08/raw/e3ba827f7a5f3ec986447a5f247465982eedde06/w13">溫度1</a></div>
+<div></div>
+<div>於輸入溫度值的框框內輸入數值</div>
+<div><img alt="" height="275" src="/images/S__204103687.jpg" width="450"/></div>
+<div></div>
+<div>接著就可以在下方看到輸出值的內容<img alt="" height="393" src="/images/S__204103686.jpg" width="657"/></div>
+<div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
+f=c*9/5+32
+c=(f-32)*5/9
+'''
+c=input("請輸入攝氏溫度值")
+print(c,type(c))</pre>
+</div>
+<div></div>
+<div>
+<h3>hw13-2</h3>
+</div>
+<div>基本上跟13-1差不多,但在這裡的程式是可以將我們輸入在溫度值框框的值轉換成華氏的溫度</div>
+<div></div>
+<div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/575bc410a1e21ecbdcac6137d51a5e08/raw/e3ba827f7a5f3ec986447a5f247465982eedde06/w13-2">溫度2</a></div>
+<div><span>於輸入溫度值的框框內輸入數值</span></div>
+<div><span><img alt="" height="293" src="/images/S__204103685.jpg" width="512"/></span></div>
+<div><span>接著就可以在下方看到輸出值將溫度轉換成華氏的</span></div>
+<div><span><img alt="" height="313" src="/images/S__204103688.jpg" width="522"/></span></div>
+<div></div>
+<div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
+f = c*9/5 + 32
+c = (f-32)*5/9
+'''
+c = input("請輸入攝氏溫度值")
+#print(type(c))
+c = float(c)
+print("請輸入攝氏溫度: " +str(c), "等於華氏溫度: " + str(c*9/5 +32))</pre>
+</div>
 <h2>w15</h2>
 <p>回答以下問題:</p>
 <div>

@@ -141,27 +141,27 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">hw12-2 << <a href='hw12-2.html'>Previous</a> <a href='w13.html'>Next</a> >> w13<br /><h1>hw2-1</h1>
-<p><span>將超連結加入,使其需按下下方按鈕才能輸入值</span></p>
-<p><!-- 
-在動態網站頁面中啟用 Brython 執行環境的用法, 請注意動態網站執行所在路徑
--->
-<script src="./../cmsimde/static/brython.js"></script>
-<script src="./../cmsimde/static/brython_stdlib.js"></script>
-<!-- 啟動 Brython --></p>
-<p>
-<script>
-window.onload=function(){
-brython({debug:1, pythonpath:['./../cmsimde/static/','/downloads/py/']});
-}
-</script>
-<!-- 以下事先在頁面中加入 id="brython_div" 的 div 標註
-之後可利用 Brython 的 document 模組與此 html 標註對應
---></p>
-<p><!-- 利用 html 建立一個 id="btn1" 的按鈕 --></p>
-<p><button id="btn1">取使用者輸入</button></p>
-<div id="brython_div"></div>
-<br />hw12-2 << <a href='hw12-2.html'>Previous</a> <a href='w13.html'>Next</a> >> w13</div>
+    <div id="tipue_search_content">hw13-1 << <a href='hw13-1.html'>Previous</a> <a href='w15.html'>Next</a> >> w15<br /><h1>hw13-2</h1>
+</div>
+<div>基本上跟13-1差不多,但在這裡的程式是可以將我們輸入在溫度值框框的值轉換成華氏的溫度</div>
+<div></div>
+<div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/575bc410a1e21ecbdcac6137d51a5e08/raw/e3ba827f7a5f3ec986447a5f247465982eedde06/w13-2">溫度2</a></div>
+<div><span>於輸入溫度值的框框內輸入數值</span></div>
+<div><span><img alt="" height="293" src="./../images/S__204103685.jpg" width="512"/></span></div>
+<div><span>接著就可以在下方看到輸出值將溫度轉換成華氏的</span></div>
+<div><span><img alt="" height="313" src="./../images/S__204103688.jpg" width="522"/></span></div>
+<div></div>
+<div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
+f = c*9/5 + 32
+c = (f-32)*5/9
+'''
+c = input("請輸入攝氏溫度值")
+#print(type(c))
+c = float(c)
+print("請輸入攝氏溫度: " +str(c), "等於華氏溫度: " + str(c*9/5 +32))</pre>
+</div>
+<br />hw13-1 << <a href='hw13-1.html'>Previous</a> <a href='w15.html'>Next</a> >> w15</div>
         
     <!-- footer -->
       <div class="container">
