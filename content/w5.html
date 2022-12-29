@@ -2,7 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -141,12 +141,29 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w10 << <a href='w10.html'>Previous</a> <a href='hw10-2.html'>Next</a> >> hw10-2<br /><h1>hw10-1</h1>
-<p>下方是做出來的連結</p>
-<div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/71eeb2003ad2ab07be4bf71051fbe450/raw/cbb1a791cecc74c20bc8705e6a25a9c8b9b957d9/w10_hw1">1a連結</a></div>
-<div></div>
-<div></div>
-<br />w10 << <a href='w10.html'>Previous</a> <a href='hw10-2.html'>Next</a> >> hw10-2</div>
+    <div id="tipue_search_content">HW << <a href='HW.html'>Previous</a> <a href='w10.html'>Next</a> >> w10<br /><h1>w5</h1>
+<p><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/95de27a3e1ca855eb869a163f6c59c25/raw/d4d986d81c23ea42cad3cd5a061e2f36010d57a3/w5">網頁連結</a></p>
+<p></p>
+<p>在自己Brython的地方加上在自己Github Gist建立的程式碼</p>
+<p><img alt="" height="240" src="./../images/S__204095490.jpg" width="488"/></p>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
+import random
+# 導入字串模組
+import string
+# 利用 def 關鍵字定義函式
+# 函式的輸入變數可以設定初始值
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+    # 函式內以多行註解說明函式功能
+    """Generate random password
+    """
+    # 利用 return 關鍵字將所產生的亂數字串傳回
+    return ''.join(random.choice(chars) for _ in range(size))
+# 建立一個變數與隨後的字串對應
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+# 利用重複迴圈呼叫 password_generator() 函式 10 次
+for i in range(10):
+    print(password_generator(4, pass_string))</pre><br />HW << <a href='HW.html'>Previous</a> <a href='w10.html'>Next</a> >> w10</div>
         
     <!-- footer -->
       <div class="container">

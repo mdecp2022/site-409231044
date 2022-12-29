@@ -315,13 +315,32 @@ doc["aitetris"].bind("click", aitetris.do)
 <p>因為準備比賽所以缺考考試</p>
 <p></p>
 <h1>HW</h1>
+<h2>w5</h2>
+<p><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/95de27a3e1ca855eb869a163f6c59c25/raw/d4d986d81c23ea42cad3cd5a061e2f36010d57a3/w5">網頁連結</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
+import random
+# 導入字串模組
+import string
+# 利用 def 關鍵字定義函式
+# 函式的輸入變數可以設定初始值
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+    # 函式內以多行註解說明函式功能
+    """Generate random password
+    """
+    # 利用 return 關鍵字將所產生的亂數字串傳回
+    return ''.join(random.choice(chars) for _ in range(size))
+# 建立一個變數與隨後的字串對應
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+# 利用重複迴圈呼叫 password_generator() 函式 10 次
+for i in range(10):
+    print(password_generator(4, pass_string))</pre>
 <h2>w10</h2>
 <h3>hw10-1</h3>
 <p>下方是做出來的連結</p>
 <div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/71eeb2003ad2ab07be4bf71051fbe450/raw/cbb1a791cecc74c20bc8705e6a25a9c8b9b957d9/w10_hw1">1a連結</a></div>
 <div></div>
 <div></div>
-<h3>hw2</h3>
+<h3>hw10-2</h3>
 <div>
 <div>
 <p>心得:我有自己試寫了程式便去試試看怎樣才能使結果變成可以直接<span>輸出 1, 3, 5, 7, 9</span><span>不會跳行,但還沒找出為甚麼跳行的原因,以下有實際操作的截圖</span></p>
@@ -405,7 +424,7 @@ def get_input(env):
 document["btn1"].bind('click', get_input)
 </script>
 </p>
-<h3>hw2</h3>
+<h3>hw12-2</h3>
 <p><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/853d16b9c7b450ff0fde9c6439700e8a/raw/c44c5fa0632a51eab1246d394b1d78aae28177f4/w12_hw2.py">hw2</a> <span>(有做出來的連結)</span></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
 user_input_temp = input("請輸入攝氏溫度值:")
