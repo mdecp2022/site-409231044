@@ -317,6 +317,10 @@ doc["aitetris"].bind("click", aitetris.do)
 <h1>HW</h1>
 <h2>w5</h2>
 <p><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/95de27a3e1ca855eb869a163f6c59c25/raw/d4d986d81c23ea42cad3cd5a061e2f36010d57a3/w5">網頁連結</a></p>
+<p></p>
+<p>在自己Brython的地方加上在自己Github Gist建立的程式碼</p>
+<p><img alt="" height="240" src="/images/S__204095490.jpg" width="488"/></p>
+<p></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
 import random
 # 導入字串模組
@@ -334,6 +338,34 @@ pass_string = "abcdefghkmnpqrstuwxyz123456789"
 # 利用重複迴圈呼叫 password_generator() 函式 10 次
 for i in range(10):
     print(password_generator(4, pass_string))</pre>
+<h2>w6</h2>
+<p>利用程式碼跑出修課的人員名單</p>
+<p>1a名單</p>
+<p></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import document, html
+  
+brython_div1 = document["brython_div1"]
+"""
+brython_div1 &lt;= html.BUTTON("hello")
+brython_div1 &lt;= html.BR()
+brython_div1 &lt;= html.A("google", href="https://google.com")
+"""
+  
+url = "https://mde.tw/studlist/2022fall/1a.txt"
+data = open(url).read().split("\n")
+mdecp2022 = "https://mdecp2022.github.io/site-"
+data = data[1:-1]
+for i in data:
+    stud = i.split("\t")
+    stud_num = stud[0]
+    github_acc = stud[1]
+    #print(stud_num, github_acc)
+    if github_acc == "":
+        github_acc = stud_num
+    site = mdecp2022 + github_acc
+    link = html.A(stud_num, href=site)
+    brython_div1 &lt;= link
+    brython_div1 &lt;= html.BR()</pre>
 <h2>w10</h2>
 <h3>hw10-1</h3>
 <p>下方是做出來的連結</p>

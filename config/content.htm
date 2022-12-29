@@ -337,7 +337,37 @@ def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
 pass_string = "abcdefghkmnpqrstuwxyz123456789"
 # 利用重複迴圈呼叫 password_generator() 函式 10 次
 for i in range(10):
-    print(password_generator(4, pass_string))</pre><h2>w10</h2>
+    print(password_generator(4, pass_string))</pre>
+<h2>w6</h2>
+<p>利用程式碼跑出修課的人員名單</p>
+<p>以下為實際操作的截圖及連結</p>
+<p><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/91b23704f51766dc29cdc450adc57256/raw/8eb8cb954a908215e3c4a44252e0ff90eec99a5f/w6">1a名單</a></p>
+<p><img alt="" height="244" src="/images/S__204103683.jpg" width="515"/></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import document, html
+  
+brython_div1 = document["brython_div1"]
+"""
+brython_div1 &lt;= html.BUTTON("hello")
+brython_div1 &lt;= html.BR()
+brython_div1 &lt;= html.A("google", href="https://google.com")
+"""
+  
+url = "https://mde.tw/studlist/2022fall/1a.txt"
+data = open(url).read().split("\n")
+mdecp2022 = "https://mdecp2022.github.io/site-"
+data = data[1:-1]
+for i in data:
+    stud = i.split("\t")
+    stud_num = stud[0]
+    github_acc = stud[1]
+    #print(stud_num, github_acc)
+    if github_acc == "":
+        github_acc = stud_num
+    site = mdecp2022 + github_acc
+    link = html.A(stud_num, href=site)
+    brython_div1 &lt;= link
+    brython_div1 &lt;= html.BR()</pre>
+<h2>w10</h2>
 <h3>hw10-1</h3>
 <p>下方是做出來的連結</p>
 <div><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/71eeb2003ad2ab07be4bf71051fbe450/raw/cbb1a791cecc74c20bc8705e6a25a9c8b9b957d9/w10_hw1">1a連結</a></div>

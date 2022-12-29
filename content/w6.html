@@ -2,7 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -141,15 +141,36 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w12 << <a href='w12.html'>Previous</a> <a href='hw1-1.html'>Next</a> >> hw1-1<br /><h1>hw12-1</h1>
-<p> <a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/853d16b9c7b450ff0fde9c6439700e8a/raw/e029600d54e6149da01c413ce015173ac3885f86/w12_hw1.py">hw1</a> (有做出來的連結)</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
-user_input_temp = input("請輸入攝氏溫度值:")
-# 接著列出 user_input_temp 變數的資料型別
-print(type(user_input_temp))</pre>
-<p>//// 在自己的倉儲中新增w12_hw1.py的New Gist /////</p>
-<p><img alt="" height="179" src="./../images/1671119400391.jpg" width="712"/></p>
-<br />w12 << <a href='w12.html'>Previous</a> <a href='hw1-1.html'>Next</a> >> hw1-1</div>
+    <div id="tipue_search_content">w5 << <a href='w5.html'>Previous</a> <a href='w10.html'>Next</a> >> w10<br /><h1>w6</h1>
+<p>利用程式碼跑出修課的人員名單</p>
+<p>以下為實際操作的截圖及連結</p>
+<p><a href="/get_page/Brython?src=https://gist.githubusercontent.com/409231044/91b23704f51766dc29cdc450adc57256/raw/8eb8cb954a908215e3c4a44252e0ff90eec99a5f/w6">1a名單</a></p>
+<p><img alt="" height="244" src="./../images/S__204103683.jpg" width="515"/></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import document, html
+  
+brython_div1 = document["brython_div1"]
+"""
+brython_div1 &lt;= html.BUTTON("hello")
+brython_div1 &lt;= html.BR()
+brython_div1 &lt;= html.A("google", href="https://google.com")
+"""
+  
+url = "https://mde.tw/studlist/2022fall/1a.txt"
+data = open(url).read().split("\n")
+mdecp2022 = "https://mdecp2022.github.io/site-"
+data = data[1:-1]
+for i in data:
+    stud = i.split("\t")
+    stud_num = stud[0]
+    github_acc = stud[1]
+    #print(stud_num, github_acc)
+    if github_acc == "":
+        github_acc = stud_num
+    site = mdecp2022 + github_acc
+    link = html.A(stud_num, href=site)
+    brython_div1 &lt;= link
+    brython_div1 &lt;= html.BR()</pre>
+<br />w5 << <a href='w5.html'>Previous</a> <a href='w10.html'>Next</a> >> w10</div>
         
     <!-- footer -->
       <div class="container">
