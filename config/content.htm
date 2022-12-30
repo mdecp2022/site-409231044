@@ -655,7 +655,25 @@ print(cp_score)</pre>
 <div></div>
 <div></div>
 <div></div>
-<div></div>
+<h2>w17</h2>
+<div>上台報告自己倉儲</div>
+<div><a href="https://mdecp2022.github.io/site-409231044/content/Brython.html?src=https://gist.githubusercontent.com/409231044/a9b8bc4a39cb16e278db9d275a6c1124/raw/d1ed195b687f455ce27a41c7fa6ce5b842c8e47e/w17_1">從1到10的奇數相加結果</a></div>
+<div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">sum = 1+3+5+7+9
+print(sum)</pre>
+</div>
+<div>下面是修改程式 使程式從1加到100 每次都加奇數的結果</div>
+<div><a href="https://mdecp2022.github.io/site-409231044/content/Brython.html?src=https://gist.githubusercontent.com/409231044/a9b8bc4a39cb16e278db9d275a6c1124/raw/8eb957cbe776f2d0c0142691ae9da50bc8464d64/w17">結果連結</a></div>
+<div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># sum 初始值設為 0
+sum = 0
+init = 1
+upto = 100
+# 利用 for 重複迴圈與變數加法進行累加
+for i in range(init, upto+1,+2):
+    sum = sum + i
+print("從" + str(init) + "累加到" + str(upto) + "=" + str(sum))</pre>
+</div>
 <div></div>
 <div></div>
 <div></div>
